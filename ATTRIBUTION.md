@@ -4,7 +4,7 @@
 
 The installed **Node Exporter Dashboard EN 20201010-StarsL.cn** dashboard identifies its upstream sources as:
 
-- [Grafana dashboard 11074](https://grafana.com/grafana/11074)
+- [Grafana dashboard 11074](https://grafana.com/grafana/dashboards/11074)
 - [StarsL.cn / starsliao](https://github.com/starsliao)
 - [starsliao/Prometheus](https://github.com/starsliao/Prometheus), referenced in the dashboard description
 

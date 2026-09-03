@@ -34,7 +34,7 @@ flowchart LR
 | **VM and Containers** | Eight panels: healthy targets, VM uptime, memory use, root disk use, VM CPU, container CPU, container working-set memory, and incoming network traffic |
 | **Node Exporter** | Detailed host overview with CPU, memory, disk, network, system load, and file-descriptor panels; filters for host, instance, and network interface |
 
-The Node Exporter dashboard is based on [StarsL.cn's community dashboard 11074](https://grafana.com/grafana/11074). Integrating it into the lab is distinct from authoring its original panel design. Original titles and source links are retained; see [attribution](ATTRIBUTION.md).
+The Node Exporter dashboard is based on [StarsL.cn's community dashboard 11074](https://grafana.com/grafana/dashboards/11074). Integrating it into the lab is distinct from authoring its original panel design. Original titles and source links are retained; see [attribution](ATTRIBUTION.md).
 
 ## How the monitoring works
 
