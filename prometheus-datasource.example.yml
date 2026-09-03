@@ -1,0 +1,11 @@
+# Example authored from the connection observed in Grafana.
+# Adapt the URL to the network shared by Grafana and Prometheus.
+# This is not the original VM provisioning file.
+apiVersion: 1
+datasources:
+  - name: prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090
+    isDefault: true
+    editable: true

@@ -1,0 +1,30 @@
+# Concise configuration derived from the running lab on 2026-09-03.
+# This is not the original on-disk file. Runtime defaults are omitted.
+# The machine-specific origin_prometheus label has been replaced with "lab".
+# Target names and the cAdvisor path match the observed active configuration.
+global:
+  scrape_interval: 15s
+  scrape_timeout: 10s
+  evaluation_interval: 1m
+
+scrape_configs:
+  - job_name: prometheus
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["localhost:9090"]
+        labels:
+          origin_prometheus: lab
+
+  - job_name: node-exporter
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["host.docker.internal:9100"]
+        labels:
+          origin_prometheus: lab
+
+  - job_name: cadvisor
+    metrics_path: /cadvisor/metrics
+    static_configs:
+      - targets: ["cadvisor:8080"]
+        labels:
+          origin_prometheus: lab

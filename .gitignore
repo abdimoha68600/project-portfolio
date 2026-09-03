@@ -1,0 +1,34 @@
+# Credentials and local overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+.ssh/
+.ssh-known-hosts
+
+# Runtime data and logs
+data/
+grafana-data/
+prometheus-data/
+*.db
+*.db-*
+*.log
+
+# Virtual machine artifacts
+*.vmdk
+*.vmem
+*.vmss
+*.vmsn
+*.nvram
+*.vmx
+*.vmxf
+*.vmsd
+*.lck/
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
