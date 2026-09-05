@@ -36,6 +36,20 @@ flowchart LR
 
 The Node Exporter dashboard is based on [StarsL.cn's community dashboard 11074](https://grafana.com/grafana/dashboards/11074). Integrating it into the lab is distinct from authoring its original panel design. Original titles and source links are retained; see [attribution](ATTRIBUTION.md).
 
+## Dashboard screenshots
+
+### VM and service health
+
+![Grafana VM and Containers dashboard showing three healthy scrape targets and VM uptime](vm-and-containers-dashboard.png)
+
+### Container resource monitoring
+
+![Grafana cAdvisor dashboard showing CPU usage for the monitoring containers](cadvisor-dashboard.png)
+
+### Detailed Linux host monitoring
+
+![Grafana Node Exporter dashboard showing the monitored Linux host overview](node-exporter-dashboard.png)
+
 ## How the monitoring works
 
 1. **Expose metrics.** Node Exporter supplies Linux CPU and memory measurements; cAdvisor supplies container resource measurements.
