@@ -25,18 +25,23 @@ flowchart LR
 - An Ubuntu-based monitoring environment hosted in VMware Workstation.
 - A Prometheus collection pipeline with separate jobs for Prometheus, Node Exporter, and cAdvisor.
 - Host and container metric collection, providing the data needed to investigate resource use.
-- A Grafana visualization layer with a focused **VM and Containers** dashboard and an integrated community **Node Exporter** dashboard.
+- A Grafana visualization layer with a focused **VM and Containers** dashboard, an integrated community **Node Exporter** dashboard, and a cAdvisor resource view.
 
 ## Dashboards
 
 | Dashboard | What it shows |
 | --- | --- |
 | **VM and Containers** | Eight panels: healthy targets, VM uptime, memory use, root disk use, VM CPU, container CPU, container working-set memory, and incoming network traffic |
+| **cAdvisor Exporter** | CPU, memory, cache, and network metrics for the Grafana, Prometheus, Node Exporter, and cAdvisor containers |
 | **Node Exporter** | Detailed host overview with CPU, memory, disk, network, system load, and file-descriptor panels; filters for host, instance, and network interface |
 
 The Node Exporter dashboard is based on [StarsL.cn's community dashboard 11074](https://grafana.com/grafana/dashboards/11074). Integrating it into the lab is distinct from authoring its original panel design. Original titles and source links are retained; see [attribution](ATTRIBUTION.md).
 
 ## Dashboard screenshots
+
+### Prometheus target health
+
+![Prometheus target-health page showing cAdvisor, Node Exporter, and Prometheus all up](prometheus-targets-up.png)
 
 ### VM and service health
 
